@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     
     public void Easy()
 	{
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
         easyDone = true;
 
 	}
