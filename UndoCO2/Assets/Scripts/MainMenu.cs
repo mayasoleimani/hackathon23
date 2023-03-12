@@ -39,25 +39,25 @@ public class MainMenu : MonoBehaviour
         //SceneManagement.LoadScene(3)
 	}
 
-    public void Update()
-	{
-        if (easyDone)
-		{
-            mediumBtn.enabled = true;
-		}
-        else
-		{
-            mediumBtn.enabled = false;
-		}
-        
-        if (normalDone)
-		{
-            brutalBtn.enabled = true;
-		}
-		else
-		{
-            brutalBtn.enabled = false;
-		}
-	}
+   // public void Update()
+	//{
+      //  if (easyDone)
+	//	{
+     //       mediumBtn.enabled = true;
+	//	}
+      //  else
+	//	{
+      //      mediumBtn.enabled = false;
+	//	}
+      //  
+       // if (normalDone)
+		//{
+      //      brutalBtn.enabled = true;
+	//	}
+	//	else
+	//	{
+     //       brutalBtn.enabled = false;
+	//	}
+	//}
 
 }
