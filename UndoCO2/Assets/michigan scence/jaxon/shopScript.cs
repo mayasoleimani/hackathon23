@@ -13,10 +13,13 @@ public class shopScript : MonoBehaviour
      static GameObject selectedButton;
 
     public int totalclickamount = 1;
-    public int passiveamountgenerated = 1;
-    public int totaloygxen = 0;
+    public int passiveamountgenerated = 0;
+    public static int totaloygxen = 0;
     public TMP_Text oxyg;
     public float timeremaining = 1;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +41,14 @@ public class shopScript : MonoBehaviour
             totaloygxen += passiveamountgenerated;
             oxyg.text = totaloygxen.ToString();
             timeremaining = 1;
-            Debug.Log(passiveamountgenerated);
+            // Debug.Log(passiveamountgenerated);
+            SliderControl.health = SliderControl.health - passiveamountgenerated;
         }
     }
+
+
+
+
 
 
     public void itembuy() {
@@ -121,8 +129,8 @@ public class shopScript : MonoBehaviour
                 break;
                     default:
                 break;
-
         }
-    
+        oxyg.text = totaloygxen.ToString();
+        SliderControl.ClickAmount = totalclickamount;
     }
 }
