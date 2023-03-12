@@ -39,7 +39,7 @@ public class shopScript : MonoBehaviour
         {
 
             totaloygxen += passiveamountgenerated;
-            oxyg.text = totaloygxen.ToString();
+            oxyg.text = "O2: " + totaloygxen.ToString();
             timeremaining = 1;
             // Debug.Log(passiveamountgenerated);
             SliderControl.health = SliderControl.health - passiveamountgenerated;
@@ -130,7 +130,7 @@ public class shopScript : MonoBehaviour
                     default:
                 break;
         }
-        oxyg.text = totaloygxen.ToString();
+        oxyg.text = "O2: " + totaloygxen.ToString();
         SliderControl.ClickAmount = totalclickamount;
     }
 }
