@@ -12,6 +12,8 @@ public class SliderControl : MonoBehaviour
     public TMP_Text myText;
     public Slider mySlider;
     public static float ClickAmount = 1;
+   public AudioSource ab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class SliderControl : MonoBehaviour
     {
         health = health - ClickAmount;
         shopScript.totaloygxen += ClickAmount;
+        ab.Play();
     }
 
     
