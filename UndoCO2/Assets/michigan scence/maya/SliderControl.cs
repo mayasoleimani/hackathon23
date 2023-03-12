@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.EventSystems;
 
 public class SliderControl : MonoBehaviour
 {
     int n;
-    public TextMeshPro myText;
+    public float health;
+    public TMP_Text myText;
     public Slider mySlider;
-
+    public static int ClickAmount = 300;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,17 @@ public class SliderControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myText.text = "Current Value: " + mySlider.value;
+        mySlider.value = health;
+        myText.text = "CO2: " + health;
+        
+
+    }
+
+
+
+
+    public void GainHealth()
+    {
+        health = health - ClickAmount;
     }
 }
