@@ -8,10 +8,10 @@ using UnityEngine.EventSystems;
 public class SliderControl : MonoBehaviour
 {
     int n;
-    public static float health;
+    public static float health= 10000000;
     public TMP_Text myText;
     public Slider mySlider;
-    public static int ClickAmount = 300;
+    public static float ClickAmount = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,12 @@ public class SliderControl : MonoBehaviour
     {
         mySlider.value = health;
         myText.text = "CO2: " + health;
-        
+
+        if (health <= 0)
+        {
+
+            myText.text = "congrats you saved michigan ecosystem";
+        }
 
     }
 
@@ -33,6 +38,7 @@ public class SliderControl : MonoBehaviour
     public void GainHealth()
     {
         health = health - ClickAmount;
+        shopScript.totaloygxen += ClickAmount;
     }
 
     
