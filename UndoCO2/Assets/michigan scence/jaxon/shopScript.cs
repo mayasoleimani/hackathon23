@@ -7,14 +7,14 @@ using TMPro;
 
 public class shopScript : MonoBehaviour
 {
-    public int total = 1;
+    public float total = 1;
     public TMP_Text textMesh;
     public Object[] obj = new Object[14];
      static GameObject selectedButton;
 
-    public int totalclickamount = 1;
-    public int passiveamountgenerated = 0;
-    public static int totaloygxen = 0;
+    public float totalclickamount = 1;
+    public float passiveamountgenerated = 0;
+    public static float totaloygxen = 0;
     public TMP_Text oxyg;
     public float timeremaining = 1;
 
@@ -59,71 +59,71 @@ public class shopScript : MonoBehaviour
 
         switch (ClickedButtonName) {
             case 1:
-                if (totaloygxen >= 1) {
-                    totaloygxen -= 1;
+                if (totaloygxen >= 10) {
+                    totaloygxen -= 10;
                     totalclickamount += 1;
                 }
                 break;
             case 2:
-                if (totaloygxen >= 10)
+                if (totaloygxen >= 100)
                 {
-                    totaloygxen -= 10;
+                    totaloygxen -= 100;
                     passiveamountgenerated += 5;
                 }
                 break;
             case 3:
-                if (totaloygxen >= 100)
+                if (totaloygxen >= 1000)
                 {
-                    totaloygxen -= 100;
+                    totaloygxen -= 1000;
                     totalclickamount += 50;
                 }
                 break;
             case 4:
-                if (totaloygxen >= 1000)
+                if (totaloygxen >= 10000)
                 {
-                    totaloygxen -= 1000;
+                    totaloygxen -= 10000;
                     passiveamountgenerated += 500;
                 }
                 break;
             case 5:
-                if (totaloygxen >= 10000)
+                if (totaloygxen >= 100000)
                 {
-                    totaloygxen -= 10000;
+                    totaloygxen -= 100000;
                     totalclickamount += 5000;
                 }
                 break;
             case 6:
-                if (totaloygxen >= 100000)
+                if (totaloygxen >= 1000000)
                 {
-                    totaloygxen -= 100000;
+                    totaloygxen -= 1000000;
                     passiveamountgenerated += 50000;
                 }
                 break;
             case 7:
-                if (totaloygxen >= 1000000)
+                if (totaloygxen >= 10000000)
                 {
-                    totaloygxen -= 1000000;
+                    totaloygxen -= 10000000;
                     totalclickamount += 500000;
                 }
                 break;
             case 8:
-                if (totaloygxen >= 10000000)
+                if (totaloygxen >= 100000000)
                 {
-                    totaloygxen -= 10000000;
+                    totaloygxen -= 100000000;
                     passiveamountgenerated += 500000;
                 }
                 break;
             case 9:
-                if (totaloygxen >= 100000000)
+                if (totaloygxen >= 1000000000)
                 {
-                    totaloygxen -= 100000000;
+                    totaloygxen -= 1000000000;
                     totalclickamount += 50000000;
                 }
                 break;
             case 10:
-                if (totaloygxen >= 1000000000)
+                if (totaloygxen >= 10000000000)
                 {
-                    totaloygxen -= 1000000000;
+                    totaloygxen -= 10000000000;
                     passiveamountgenerated += 500000000;
                 }
                 break;
